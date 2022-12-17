@@ -1,0 +1,43 @@
+
+
+.container {
+    display: flex;
+    max-width: 700px;
+    max-height: 700px;
+    justify-content: center;
+}
+
+.grid-container {
+    display: grid;
+    min-width: 400px;
+    min-height: 400px;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    background-color: #2196F3;
+    padding: 5px;
+    gap: 5px;
+  }
+  
+  .grid-square {
+    background-color: rgba(255, 255, 255, 0.8);
+    border: 1px solid rgba(0, 0, 0, 0.8);
+    padding: 5px;
+    font-size: 30px;
+    text-align: center;
+  }
+
+  .player-one {
+    background-color: red;
+    border: 1px solid rgba(0, 0, 0, 0.8);
+    padding: 5px;
+    font-size: 30px;
+    text-align: center;
+  }
+
+  .player-two {
+    background-color: green;
+    border: 1px solid rgba(0, 0, 0, 0.8);
+    padding: 5px;
+    font-size: 30px;
+    text-align: center;
+  }
