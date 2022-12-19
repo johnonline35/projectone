@@ -8,23 +8,23 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-
-
-<h1>display: grid</h1>
-
-<p>Use display: grid; to make a block-level grid container:</p>
-<div class="container">
-    <div class="grid-container">
-        <div class="grid-square" id="1">1</div>
-        <div class="grid-square" id="2">2</div>
-        <div class="grid-square" id="3">3</div>  
-        <div class="grid-square" id="4">4</div>
-        <div class="grid-square" id="5">5</div>
-        <div class="grid-square" id="6">6</div>  
-        <div class="grid-square" id="7">7</div>
-        <div class="grid-square" id="8">8</div>
-        <div class="grid-square" id="9">9</div>  
-    </div>
+<div id="maincontainer">
+        <div id="gameContainer">
+            <h1>Crypto Kittie Killer</h1>
+            <div id="tableContainer">
+                <div squareIndex="0" class="cell"></div>
+                <div squareIndex="1" class="cell"></div>
+                <div squareIndex="2" class="cell"></div>
+                <div squareIndex="3" class="cell"></div>
+                <div squareIndex="4" class="cell"></div>
+                <div squareIndex="5" class="cell"></div>
+                <div squareIndex="6" class="cell"></div>
+                <div squareIndex="7" class="cell"></div>
+                <div squareIndex="8" class="cell"></div>
+            </div>
+            <h2 id="statusText"></h2>
+            <button id="restart">Restart</button>
+        </div>
 </div>
 <script src="script.js"></script>
 </body>

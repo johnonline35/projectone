@@ -1,43 +1,33 @@
-
-
-.container {
-    display: flex;
-    max-width: 700px;
-    max-height: 700px;
-    justify-content: center;
+#mainContainer {
+    grid-template-areas: 
+    "header header header"
+    "sideBar1 game sidebar2"
+    "footer footer footer"
 }
 
-.grid-container {
+#player1 {
+    grid-area: sidebar1;
+}
+
+#gameContainer {
+    font-family: "ariel bold";
+    text-align: center;
+}
+
+#tableContainer {
     display: grid;
-    min-width: 400px;
-    min-height: 400px;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 1fr 1fr 1fr;
-    background-color: #2196F3;
-    padding: 5px;
-    gap: 5px;
-  }
-  
-  .grid-square {
-    background-color: rgba(255, 255, 255, 0.8);
-    border: 1px solid rgba(0, 0, 0, 0.8);
-    padding: 5px;
-    font-size: 30px;
-    text-align: center;
-  }
+    grid-template-columns: repeat(3, auto);
+    width: 600px;
+    margin: auto;
+}
 
-  .player-one {
-    background-color: red;
-    border: 1px solid rgba(0, 0, 0, 0.8);
-    padding: 5px;
-    font-size: 30px;
-    text-align: center;
-  }
+.cell {
+    width: 200px;
+    height: 200px;
+    border: 2px solid;
+    box-shadow: 0 0 0 2px;
+    line-height: 200px;
+    font-size: 50px;
+    cursor: pointer;
+}
 
-  .player-two {
-    background-color: green;
-    border: 1px solid rgba(0, 0, 0, 0.8);
-    padding: 5px;
-    font-size: 30px;
-    text-align: center;
-  }
