@@ -1,16 +1,6 @@
-#mainContainer {
-    grid-template-areas: 
-    "header header header"
-    "sideBar1 game sidebar2"
-    "footer footer footer"
-}
-
-#player1 {
-    grid-area: sidebar1;
-}
-
 #gameContainer {
     font-family: "ariel bold";
+    width: auto;
     text-align: center;
 }
 
