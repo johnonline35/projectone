@@ -1,4 +1,59 @@
+#maincontainer {
+    display: grid;
+    grid-template-columns: 1fr 600px 1fr;
+    width: 1200px;
+    margin: auto;
+    grid-template-areas: 
+    "one one one"
+    "two three four"
+    "five five five";
+    gap: 15px;
+}
+
+.header{
+    background: #404040;
+    grid-area: one;
+    height: 90px;
+    text-align: center;
+    color: white;
+	font-size: 18px;
+	text-shadow: -1px 1px 2px #000,
+				  1px 1px 2px #000,
+				  1px -1px 0 #000,
+				  -1px -1px 0 #000;
+}
+
+.sidebar1 {
+    grid-area: two;
+    text-align: center;
+    width: 200px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 50px;
+}
+
+.sidebar2 {
+    grid-area: four;
+    text-align: center;
+    width: 200px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 50px;
+}
+
+img {
+    height: auto;
+    max-width: 100%;
+  }
+
+.footer {
+    grid-area: 5;
+}
+
 #gameContainer {
+    grid-area: three;
     font-family: "ariel bold";
     width: auto;
     text-align: center;
@@ -9,15 +64,35 @@
     grid-template-columns: repeat(3, auto);
     width: 600px;
     margin: auto;
+    align-items: center;
+    justify-content: center;
 }
 
 .cell {
     width: 200px;
     height: 200px;
     border: 2px solid;
-    box-shadow: 0 0 0 2px;
     line-height: 200px;
     font-size: 50px;
     cursor: pointer;
 }
 
+.cell:first-child, 
+.cell:nth-child(2),
+.cell:nth-child(3) {
+    border-top: none;
+}
+
+.cell:nth-child(3n + 1) {
+    border-left: none;
+}
+
+.cell:nth-child(3n + 3) {
+    border-right: none;
+}
+
+.cell:last-child, 
+.cell:nth-child(8),
+.cell:nth-child(7) {
+    border-bottom: none;
+}
